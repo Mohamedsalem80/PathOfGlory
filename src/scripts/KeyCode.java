@@ -66,6 +66,7 @@ class KeyCode {
     static int Space;
     static int LeftShift;
     static int RightShift;
+    static int Mouse0;
 
     
 }

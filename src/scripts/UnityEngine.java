@@ -13,4 +13,14 @@ public class UnityEngine {
 
     public UnityEngine() {
     }
+
+    static class Random {
+
+        static float Range(float f, float spreadIntensity) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public Random() {
+        }
+    }
 }

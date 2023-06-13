@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package scripts;
+package Unity;
 
 /**
  *
  * @author moham
  */
-class Quaternion {
-    public static float identity;
-    static double Euler(float xrotaion, float yrotaion, float f) {
-        return (xrotaion + yrotaion)* f;
-    }
+public class VisualScripting {
     
 }

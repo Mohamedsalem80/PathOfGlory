@@ -10,6 +10,9 @@ package scripts;
  * @author moham
  */
 class Physics {
+    public static boolean Raycast(Ray ray, RaycastHit hit) {
+        return true;
+    }
 
     static boolean CheckSphere(float position, float groundDistance, LayerMask groundMask) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

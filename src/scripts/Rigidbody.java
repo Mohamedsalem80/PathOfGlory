@@ -9,10 +9,6 @@ package scripts;
  *
  * @author moham
  */
-class Quaternion {
-    public static float identity;
-    static double Euler(float xrotaion, float yrotaion, float f) {
-        return (xrotaion + yrotaion)* f;
-    }
+class Rigidbody {
     
 }
