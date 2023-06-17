@@ -71,6 +71,11 @@ class KeyCode {
     static int Joystick1Button2;
     static int Joystick1Button1;
     static int Joystick1Button7;
+    static int Joystick1Button5;
+    static int Joystick1Button6;
+    static int Joystick1Button8;
+    static int Joystick1Button9;
+    static int Joystick1Button10;
 
     
 }
