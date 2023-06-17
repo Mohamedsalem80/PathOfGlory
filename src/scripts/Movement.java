@@ -4,7 +4,7 @@ import System.Collections;
 import System.Collections.Generic;
 import Unity.Engine;
 
-public class Movement extends MonoBehaviour{
+public class Movement extends MonoBehaviour {
    // Animator animator;
     private CharacterController controller;
     public float normalSpeed = 12f;
