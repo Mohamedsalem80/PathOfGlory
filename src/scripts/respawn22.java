@@ -20,7 +20,7 @@ public class respawn22 extends MonoBehaviour
     {
         died = false;
 
-        currentHealth = ((Health) GetComponent(new Health())).health;
+        currentHealth = (int) ((Health) GetComponent(new Health())).health;
         if (currentHealth <= threshold)
         {
             StartCoroutine(MoveToRespawnPointWithDelay());
