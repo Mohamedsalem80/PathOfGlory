@@ -29,6 +29,10 @@ class GameObject {
     void SetParent(Collision objectWeHit) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    void SetActive(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     public static class transform {
 
         static Vector3 forward;
