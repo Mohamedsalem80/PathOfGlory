@@ -10,7 +10,7 @@ package scripts;
  * @author moham
  */
 class GameObject {
-
+    public static Transform transform;
     GameObject(Object GetComponent) {
         
     }
@@ -24,6 +24,10 @@ class GameObject {
     }
     public static void setForward(Vector3 forward) {
         transform.forward = forward;
+    }
+
+    void SetParent(Collision objectWeHit) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     public static class transform {
 

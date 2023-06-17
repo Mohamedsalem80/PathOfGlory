@@ -18,5 +18,7 @@ class transform {
     public boolean equals(float o) {
         return true; //To change body of generated methods, choose Tools | Templates.
     }
+    void SetParent(Transform t){
     
+    }
 }

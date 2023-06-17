@@ -11,6 +11,18 @@ package scripts;
  */
 class Collision {
 
+    String name;
+    ContactPoint[] contacts;
+    static Transform transform;
+    
+    boolean CompareTag(String target) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    Object GetComponent(Health h) {
+        return new Object();
+    }
+
     static class gameObject {
 
         static String name;

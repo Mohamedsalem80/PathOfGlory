@@ -10,47 +10,46 @@ public class Bullet extends MonoBehaviour
 {
     private void OnCollisionEnter(Collision objectWeHit)
     {
-        if(objectWeHit.gameObject.CompareTag("Target"))
+        if(objectWeHit.CompareTag("Target"))
         {
-            print(" !" + objectWeHit.gameObject.name + "hit ");
+            print(" !" + objectWeHit.name + "hit ");
             CreateBulletImpactEffect(objectWeHit);
-            Destroy(gameObject);
+            Destroy(objectWeHit);
         } else {
+            if (objectWeHit.CompareTag("Wall"))
+            {
+                print("hit " + objectWeHit.name + " !");
+                CreateBulletImpactEffect(objectWeHit);
+                Destroy(objectWeHit);
+            }
+            if (objectWeHit.CompareTag("Player"))
+            {
+                print("hit a player");
+                ((Health) objectWeHit.GetComponent(new Health())).health-=10;
+                Destroy(objectWeHit);
+            }
         }
-        if (objectWeHit.gameObject.CompareTag("Wall"))
-        {
-            print("hit " + objectWeHit.gameObject.name + " !");
-            CreateBulletImpactEffect(objectWeHit);
-            Destroy(gameObject);
-        }
-        if(objectWeHit.gameObject.CompareTag("Beer"))
-        {
-            print("hit a beer bottle");
-            objectWeHit.gameObject.GetComponent(new BeerBottle()).Shatter();
-        }
-        if (objectWeHit.gameObject.CompareTag("Player"))
-        {
-            print("hit a player");
-            objectWeHit.gameObject.GetComponent<Health>().health-=10;
-            Destroy(gameObject);
-        }
-        void CreateBulletImpactEffect(Collision objectWeHit)
-        {
+    }
+    
+    void CreateBulletImpactEffect(Collision objectWeHit) {
             ContactPoint contact = objectWeHit.contacts[0];
             GameObject hole = Instantiate(
                 GlobalReferences.instance.bulletImpactEffectPrefab,
                 contact.point,
                 Quaternion.LookRotation(contact.normal)
                 );
-            hole.transform.SetParent(objectWeHit.gameObject.transform);
+            hole.SetParent(objectWeHit);
         }
-    }
 
     private void print(String string) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    private void CreateBulletImpactEffect(Collision objectWeHit) {
+    private void Destroy(Collision objectWeHit) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private GameObject Instantiate(GameObject bulletImpactEffectPrefab, float point, float LookRotation) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

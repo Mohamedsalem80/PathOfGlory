@@ -11,6 +11,9 @@ package scripts;
  */
 class Quaternion {
     public static float identity;
+    static float LookRotation(float f){
+        return f;
+    }
     static double Euler(float xrotaion, float yrotaion, float f) {
         return (xrotaion + yrotaion)* f;
     }
