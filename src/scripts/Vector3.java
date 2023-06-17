@@ -30,6 +30,10 @@ class Vector3 {
     Vector3(Vector3 shootingDirection) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    Vector3(eulerAngles position) {
+        this.normalized = new Vector3();
+    }
     public Vector3 Mul(double f){
         return this;
     }

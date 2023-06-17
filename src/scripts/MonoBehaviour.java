@@ -13,6 +13,7 @@ class MonoBehaviour {
     public Object GetComponent(Object o) {
         return new Object();
     }
+    
     public static class gameObject {
         public static transform transform;
         public gameObject() {

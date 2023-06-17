@@ -17,4 +17,5 @@ class CharacterController {
     public static void Move(Vector3 x){
     
     }
+    boolean enabled;
 }

@@ -67,6 +67,10 @@ class KeyCode {
     static int LeftShift;
     static int RightShift;
     static int Mouse0;
+    static int Joystick1Button3;
+    static int Joystick1Button2;
+    static int Joystick1Button1;
+    static int Joystick1Button7;
 
     
 }

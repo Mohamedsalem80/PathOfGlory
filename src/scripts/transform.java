@@ -11,7 +11,12 @@ package scripts;
  */
 class transform {
     public static double localRotation;
-    public static float position;
+    public static Vector3 position;
     static float forward;
     static float right;
+
+    public boolean equals(float o) {
+        return true; //To change body of generated methods, choose Tools | Templates.
+    }
+    
 }
