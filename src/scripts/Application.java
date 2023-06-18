@@ -9,14 +9,6 @@ package scripts;
  *
  * @author moham
  */
-class CharacterController {
-    public static void Move(float x){
+class Application {
     
-    }
-    
-    public static void Move(Vector3 x){
-    
-    }
-    
-    boolean enabled;
 }
